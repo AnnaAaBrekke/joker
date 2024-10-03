@@ -1,6 +1,6 @@
 {
   "name": "joker",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "example",
   "main": "src/index.js",
   "type": "module",
@@ -8,7 +8,8 @@
     "test": "node src/js/joker.test.js",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint src/**/*.js --cache --fix"
+    "lint-fix": "eslint src/**/*.js --cache --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -30,9 +31,23 @@
   "homepage": "https://github.com/AnnaAaBrekke/joker#readme",
   "devDependencies": {
     "eslint": "^8.57.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3"
   },
   "dependencies": {
     "give-me-a-joke": "^0.5.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
   }
 }
