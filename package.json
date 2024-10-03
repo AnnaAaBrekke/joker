@@ -1,0 +1,28 @@
+{
+  "name": "joker",
+  "version": "0.0.1",
+  "description": "example",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaAaBrekke/joker.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "lesson",
+    "workflow",
+    "website"
+  ],
+  "author": "Anna Aasprong Brekke <annabrekke98@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnnaAaBrekke/joker/issues"
+  },
+  "homepage": "https://github.com/AnnaAaBrekke/joker#readme"
+}
